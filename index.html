@@ -5,19 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DC Museum Watch</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="
-  
-  const firebaseConfig = {
-  apiKey: "AIzaSyAlBa991H5jEDkLZTFyUG8DQos28_7hSQ8",
-  authDomain: "pickle-museum.firebaseapp.com",
-  projectId: "pickle-museum",
-  storageBucket: "pickle-museum.firebasestorage.app",
-  messagingSenderId: "133198433758",
-  appId: "1:133198433758:web:598fdd995f2fa51c56e14f"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<!--
+  FIREBASE SETUP REQUIRED — reviews and the visitor counter are stored in
+  Firebase Firestore so they work on a plain static host like GitHub Pages.
+  See the firebaseConfig object near the top of the main script section
+  below for the one-time setup steps.
+-->
 <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
 <style>
@@ -697,12 +691,12 @@ const app = initializeApp(firebaseConfig);
    project; add Firebase Authentication + tighter rules if that matters.
    ========================================================================= */
 const FIREBASE_CONFIG = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAlBa991H5jEDkLZTFyUG8DQos28_7hSQ8",
+  authDomain: "pickle-museum.firebaseapp.com",
+  projectId: "pickle-museum",
+  storageBucket: "pickle-museum.firebasestorage.app",
+  messagingSenderId: "133198433758",
+  appId: "1:133198433758:web:598fdd995f2fa51c56e14f"
 };
 
 let db = null;
